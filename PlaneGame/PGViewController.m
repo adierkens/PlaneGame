@@ -7,22 +7,26 @@
 //
 
 #import "PGViewController.h"
-#import "PGMyScene.h"
-
+#import "PGMainLevel.h"
 @implementation PGViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self playGame];
 
+
+}
+-(void) playGame {
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [PGMyScene sceneWithSize:skView.bounds.size];
+    PGMainLevel * scene = [[PGMainLevel alloc] initWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.viewController = self;
     
     // Present the scene.
     [skView presentScene:scene];
@@ -40,6 +44,12 @@
     } else {
         return UIInterfaceOrientationMaskAll;
     }
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"PRESSED BUTTON");
+    [self playGame];
 }
 
 - (void)didReceiveMemoryWarning

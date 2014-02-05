@@ -16,7 +16,6 @@
 		66C94DBF18A1E07600836A99 /* PGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DBE18A1E07600836A99 /* PGAppDelegate.m */; };
 		66C94DC218A1E07600836A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C94DC018A1E07600836A99 /* Main.storyboard */; };
 		66C94DC518A1E07600836A99 /* PGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DC418A1E07600836A99 /* PGViewController.m */; };
-		66C94DC818A1E07600836A99 /* PGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DC718A1E07600836A99 /* PGMyScene.m */; };
 		66C94DCA18A1E07600836A99 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C94DC918A1E07600836A99 /* Spaceship.png */; };
 		66C94DCC18A1E07600836A99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C94DCB18A1E07600836A99 /* Images.xcassets */; };
 		66C94DD318A1E07600836A99 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C94DD218A1E07600836A99 /* XCTest.framework */; };
@@ -24,6 +23,9 @@
 		66C94DD518A1E07600836A99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C94DB018A1E07600836A99 /* UIKit.framework */; };
 		66C94DDD18A1E07600836A99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66C94DDB18A1E07600836A99 /* InfoPlist.strings */; };
 		66C94DDF18A1E07600836A99 /* PlaneGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DDE18A1E07600836A99 /* PlaneGameTests.m */; };
+		66C94DEA18A1E0B100836A99 /* PGMainLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DE918A1E0B100836A99 /* PGMainLevel.m */; };
+		66C94DEC18A1F2F200836A99 /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C94DEB18A1F2F200836A99 /* asteroid.png */; };
+		66C94DEF18A204DB00836A99 /* PGStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C94DEE18A204DB00836A99 /* PGStartScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,6 @@
 		66C94DC118A1E07600836A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66C94DC318A1E07600836A99 /* PGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGViewController.h; sourceTree = "<group>"; };
 		66C94DC418A1E07600836A99 /* PGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGViewController.m; sourceTree = "<group>"; };
-		66C94DC618A1E07600836A99 /* PGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMyScene.h; sourceTree = "<group>"; };
-		66C94DC718A1E07600836A99 /* PGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMyScene.m; sourceTree = "<group>"; };
 		66C94DC918A1E07600836A99 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		66C94DCB18A1E07600836A99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66C94DD118A1E07600836A99 /* PlaneGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaneGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +60,11 @@
 		66C94DDA18A1E07600836A99 /* PlaneGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlaneGameTests-Info.plist"; sourceTree = "<group>"; };
 		66C94DDC18A1E07600836A99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66C94DDE18A1E07600836A99 /* PlaneGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaneGameTests.m; sourceTree = "<group>"; };
+		66C94DE818A1E0B100836A99 /* PGMainLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMainLevel.h; sourceTree = "<group>"; };
+		66C94DE918A1E0B100836A99 /* PGMainLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMainLevel.m; sourceTree = "<group>"; };
+		66C94DEB18A1F2F200836A99 /* asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid.png; sourceTree = "<group>"; };
+		66C94DED18A204DB00836A99 /* PGStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGStartScreen.h; sourceTree = "<group>"; };
+		66C94DEE18A204DB00836A99 /* PGStartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGStartScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +126,16 @@
 		66C94DB418A1E07600836A99 /* PlaneGame */ = {
 			isa = PBXGroup;
 			children = (
+				66C94DEB18A1F2F200836A99 /* asteroid.png */,
 				66C94DBD18A1E07600836A99 /* PGAppDelegate.h */,
 				66C94DBE18A1E07600836A99 /* PGAppDelegate.m */,
 				66C94DC018A1E07600836A99 /* Main.storyboard */,
 				66C94DC318A1E07600836A99 /* PGViewController.h */,
 				66C94DC418A1E07600836A99 /* PGViewController.m */,
-				66C94DC618A1E07600836A99 /* PGMyScene.h */,
-				66C94DC718A1E07600836A99 /* PGMyScene.m */,
+				66C94DE818A1E0B100836A99 /* PGMainLevel.h */,
+				66C94DE918A1E0B100836A99 /* PGMainLevel.m */,
+				66C94DED18A204DB00836A99 /* PGStartScreen.h */,
+				66C94DEE18A204DB00836A99 /* PGStartScreen.m */,
 				66C94DC918A1E07600836A99 /* Spaceship.png */,
 				66C94DCB18A1E07600836A99 /* Images.xcassets */,
 				66C94DB518A1E07600836A99 /* Supporting Files */,
@@ -244,6 +252,7 @@
 				66C94DB918A1E07600836A99 /* InfoPlist.strings in Resources */,
 				66C94DCC18A1E07600836A99 /* Images.xcassets in Resources */,
 				66C94DCA18A1E07600836A99 /* Spaceship.png in Resources */,
+				66C94DEC18A1F2F200836A99 /* asteroid.png in Resources */,
 				66C94DC218A1E07600836A99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C94DBB18A1E07600836A99 /* main.m in Sources */,
-				66C94DC818A1E07600836A99 /* PGMyScene.m in Sources */,
+				66C94DEA18A1E0B100836A99 /* PGMainLevel.m in Sources */,
 				66C94DC518A1E07600836A99 /* PGViewController.m in Sources */,
 				66C94DBF18A1E07600836A99 /* PGAppDelegate.m in Sources */,
+				66C94DEF18A204DB00836A99 /* PGStartScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

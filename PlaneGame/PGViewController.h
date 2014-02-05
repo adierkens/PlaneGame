@@ -10,5 +10,6 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface PGViewController : UIViewController
-
+<UIAlertViewDelegate>
+-(void) playGame;
 @end
