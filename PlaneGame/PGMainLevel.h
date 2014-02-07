@@ -8,8 +8,10 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "PGViewController.h"
+#import "PGGameCenterManager.h"
 
 @interface PGMainLevel : SKScene
+<SKPhysicsContactDelegate, PGGameCenterManagerDelegate>
 @property (nonatomic) NSInteger score;
 @property (nonatomic, weak) PGViewController* viewController;
 @end

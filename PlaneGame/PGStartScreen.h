@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "PGViewController.h"
 
 @interface PGStartScreen : SKScene
-
+@property (nonatomic, weak) PGViewController* viewController;
 @end
